@@ -1,0 +1,51 @@
+.delete {
+    color: red;
+    font-weight: bold;
+}
+.name-tag, .quantity-tag, .measure-tag {
+    display: inline-block;
+}
+.name-tag {
+    width: 20vw;
+    max-width: 20vw;
+}
+.quantity-tag {
+    text-align: right;
+    padding-right: 10px;
+    width: 5vw;
+    color: #7CB342;
+    font-weight: bold;
+}
+
+.measure-tag {
+    width: 7vw;
+    font-weight: bold;
+}
+
+nav > a {
+    font-size: large;
+    padding: 5px;
+}
+
+header {
+    min-height: 20vh;
+
+}
+
+main {
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+footer {
+    font-size: small;
+}
+
+/* for the header - query or no query */
+
+.query > :last-child {
+    color: #7CB342;
+}
+.hidden {
+    display: none;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Acasa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav style="display: flex; height: 50px;  align-content: center">
+    <a href="/"> <img src="images/logo.png" alt="logo" width="50" height="50"/></a>
+    <form action="" id='search-bar' style="display: inline-flex; align-content: center">
+        <label style="display: inline-flex; align-content: center; padding: 5px; justify-content: center    ">
+            <input type="text" style=" padding: 5px;" placeholder="cautare.." />
+        </label>
+        <button type="button" onclick="submitSearch()" style="margin: 5px">
+            CAUTA
+        </button>
+        <button type="button" onclick="deleteSearch()" style="margin: 5px">
+            STERGE CAUTARE <!-- delete text from searchbar and reload the list -->
+        </button>
+        <a href="./form.html">
+            <button type="button" style="margin: 5px">
+                ADAUGA PRODUS NOU <!-- delete text from searchbar and reload the list -->
+            </button>
+        </a>
+    </form>
+</nav>
+<header>
+    <h2 class="no-query">Lista de produse.</h2>
+    <h2 class="query hidden" id="search-list">Cautare: <span>""</span></h2>
+
+</header>
+
+<main style="min-height: 100vh">
+    <div id="list">
+<!--        loaded from -->
+    </div>
+</main>
+
+<footer>
+    Created in 2021. Logo from <a href='https://www.freepik.com/vectors/logo'>Logo vector created by freepik -
+    www.freepik.com</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
